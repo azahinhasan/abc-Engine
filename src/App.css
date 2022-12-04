@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+@media Print {
+  .hideFromPrint {
+    display: none;
+  }
+}
+
+.resultPaper {
+  margin: auto;
+  width: 700px;
+  padding: 1%;
+  margin-bottom: 50px;
+}

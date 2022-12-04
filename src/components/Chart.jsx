@@ -28,7 +28,7 @@ const Chart = ({ allDataFromCSV }) => {
           <Legend />
           <Bar dataKey="yAxis" fill="#1565C0" />
         </BarChart>
-        P.S. Due to so many data I limited to 120
+        P.S. Due to so many data I limited it's to 120
       </Paper>
     </Collapse>
   );

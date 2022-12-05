@@ -14,17 +14,18 @@ function App() {
 
 
 
-  function arrayMin(arr) {
+  const arrayMin=(arr)=> {
     return arr.reduce(function (p, v) {
       return p < v ? p : v;
     });
   }
 
-  function arrayMax(arr) {
+  const arrayMax=(arr)=> {
     return arr.reduce(function (p, v) {
       return p > v ? p : v;
     });
   }
+
 
   const changeHandler = (event) => {
     console.log(event.target.files[0]);

@@ -6,7 +6,7 @@ const Form = ({
   setAllInputs,
   csvUpload,
   resultHandler,
-  allDataFromCSV,
+  allDataFromCSV
 }) => {
   return (
     <div>
@@ -70,7 +70,7 @@ const Form = ({
 
           {/* ------------------------------ */}
           <Grid item xs={12} sm={12}>
-            Add CSV:
+            Upload file(CSV):
             <TextField
               type="file"
               name="file"
@@ -166,9 +166,14 @@ const Form = ({
             />
           </Grid>
           {/*----------------------------  */}
-          <Grid item xs={12} sm={12}>
+          <Grid item xs={6} sm={6}>
             <Button variant="contained" disabled={Object.keys(allInputs).length ===0} onClick={resultHandler}>
               Result
+            </Button>
+          </Grid>
+          <Grid item xs={6} sm={6}>
+            <Button variant="contained" disabled={Object.keys(allInputs).length ===0} onClick={()=>window.location.reload()}>
+              Reload
             </Button>
           </Grid>
         </Grid>
